@@ -11,8 +11,8 @@ import type { Design } from '@/lib/supabase'
 const DEMO_DESIGNS: Design[] = [
   {
     id: '1',
-    name: 'The Bird',
-    description: 'A delicate songbird perched on a flowering branch. Perfect for nature lovers.',
+    name: 'Kryplokůň',
+    description: 'Delikátně vyobrazený kryplokůň. Perfektní pro milovníky zvířat.',
     image_url: 'https://images.unsplash.com/photo-1549608276-5786777e6587?w=400&h=400&fit=crop',
     category: 'Nature',
     available_sizes: ['S', 'M', 'L', 'XL', '2XL'],
