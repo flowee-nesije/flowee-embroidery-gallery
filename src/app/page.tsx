@@ -13,7 +13,7 @@ const DEMO_DESIGNS: Design[] = [
     id: '1',
     name: 'Kryplokůň',
     description: 'Delikátně vyobrazený kryplokůň. Perfektní pro milovníky zvířat.',
-    image_url: 'https://images.unsplash.com/photo-1549608276-5786777e6587?w=400&h=400&fit=crop',
+    image_url: 'https://wxataycbhszkfyvceixd.supabase.co/storage/v1/object/public/designs/blbustky-kun-finished.png?w=400&h=400&fit=crop',
     category: 'Nature',
     available_sizes: ['S', 'M', 'L', 'XL', '2XL'],
     available_textiles: ['T-Shirt', 'Hoodie', 'Tote Bag', 'Cap'],
@@ -22,9 +22,9 @@ const DEMO_DESIGNS: Design[] = [
   },
   {
     id: '2',
-    name: 'Floral Mandala',
-    description: 'Intricate mandala pattern with floral elements. A statement piece.',
-    image_url: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&h=400&fit=crop',
+    name: 'Kuře pro lidi s úchylkou na nohy',
+    description: 'Ukaž mi na jediného člověka, který by nechtěl být vypit.',
+    image_url: 'https://wxataycbhszkfyvceixd.supabase.co/storage/v1/object/public/designs/kure-png.png?w=400&h=400&fit=crop',
     category: 'Abstract',
     available_sizes: ['S', 'M', 'L', 'XL'],
     available_textiles: ['T-Shirt', 'Sweatshirt', 'Pillow Cover'],
@@ -33,9 +33,9 @@ const DEMO_DESIGNS: Design[] = [
   },
   {
     id: '3',
-    name: 'Mountain Sunset',
-    description: 'Layered mountain silhouettes against a gradient sunset sky.',
-    image_url: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=400&fit=crop',
+    name: 'Liškočka',
+    description: 'Nemohla jsem se rozhodnout, jestli chci kreslit kočku nebo lišku, tak jsem vybrala obojí.',
+    image_url: 'https://wxataycbhszkfyvceixd.supabase.co/storage/v1/object/public/designs/liska-png.png?w=400&h=400&fit=crop',
     category: 'Landscape',
     available_sizes: ['M', 'L', 'XL', '2XL'],
     available_textiles: ['T-Shirt', 'Hoodie', 'Jacket'],
@@ -128,13 +128,12 @@ export default function HomePage() {
               ✨ Handcrafted with love
             </span>
             <h1 className="font-display text-5xl md:text-7xl font-bold mb-6">
-              <span className="text-thread-charcoal">Beautiful</span>
+              <span className="text-thread-charcoal">Připravte si</span>
               <br />
-              <span className="gradient-text">Embroidery Designs</span>
+              <span className="gradient-text">vidličky do očí</span>
             </h1>
             <p className="font-body text-xl text-thread-charcoal/70 max-w-2xl mx-auto mb-8">
-              Browse our collection of unique embroidery patterns. Select your favorite design, 
-              choose your textile, and submit your order.
+              Pošmákni si na svůdné kolekci zmrzačených zvířátek, které si na sebe můžeš obléct - myslím eticky. Vyber si design, vyplň údaje a nech si naslibovat merch.
             </p>
           </motion.div>
 

@@ -28,7 +28,7 @@ export default function Navigation({ twitchUser }: NavigationProps) {
               </svg>
             </div>
             <span className="font-display text-xl font-semibold text-thread-charcoal">
-              Embroidery<span className="text-thread-burgundy">Gallery</span>
+              Flowee<span className="text-thread-burgundy"> nešije</span>
             </span>
           </Link>
 

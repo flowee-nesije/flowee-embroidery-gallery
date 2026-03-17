@@ -76,22 +76,22 @@ export default function OrderModal({ design, isOpen, onClose, twitchUser, redemp
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* Backdrop */}
+          {/* Backdrop + Centering Container */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-thread-charcoal/50 backdrop-blur-sm z-50"
-          />
-
-          {/* Modal */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95vw] max-w-2xl max-h-[85vh] overflow-y-auto glass-card z-50 p-6 md:p-8"
+            className="fixed inset-0 bg-thread-charcoal/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto"
           >
+            {/* Modal */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto glass-card p-6 md:p-8 my-auto"
+            >
             {/* Close Button */}
             <button
               onClick={onClose}
@@ -267,6 +267,7 @@ export default function OrderModal({ design, isOpen, onClose, twitchUser, redemp
                 </button>
               </form>
             )}
+            </motion.div>
           </motion.div>
         </>
       )}

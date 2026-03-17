@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Embroidery Gallery | Handcrafted Designs',
+  title: 'Flowee nešije | Handcrafted Designs',
   description: 'Browse and order beautiful handcrafted embroidery designs for your merchandise',
 }
 
